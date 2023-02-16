@@ -1,7 +1,7 @@
 const Service = ({service, isNew}) => {
     return (
         <div className={`box ${isNew ? "box1" : ""}`}>
-            <p>
+            <p className="newParag">
                 {service}
                 {isNew && (
                     <>

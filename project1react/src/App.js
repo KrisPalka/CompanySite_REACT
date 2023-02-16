@@ -3,8 +3,7 @@ import Employees from "./components/Employees";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
-import ServicesList from "./components/Services";
-import {services} from "./data/data";
+import ServicesList from "./components/ServicesList";
 
 function App() {
     return (
@@ -12,7 +11,7 @@ function App() {
             <Nav />
             <Header />
             <Employees />
-            <ServicesList data={services} />
+            <ServicesList />
             <Footer />
         </>
     );

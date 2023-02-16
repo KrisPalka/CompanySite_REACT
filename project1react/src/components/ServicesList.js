@@ -1,6 +1,7 @@
 import Service from "./Service";
+import {services} from "./../data/data";
 
-const ServicesList = ({data}) => {
+const ServicesList = () => {
     return (
         <div>
             <div className="sec2_container">
@@ -11,10 +12,9 @@ const ServicesList = ({data}) => {
                             Czym zajmuje się nasza firma ?
                         </h3>
                         <div className="box_container">
-                            {data.map(({id, serviceName, isNew}) => (
+                            {services.map(({id, serviceName, isNew}) => (
                                 <Service key={id} service={serviceName} isNew={isNew} />
                             ))}
-                            ;
                         </div>
                     </div>
                 </div>
